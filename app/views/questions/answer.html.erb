@@ -1,0 +1,13 @@
+<h1>Stupid Coaching</h1>
+<br>
+<h2>Ta question</h2>
+<p><%= params[:question]%></p>
+<br>
+<h2>Ta réponse du coach</h2>
+<%if params[:question] == "I am going to work"%>
+  <p>Great!</p>
+<%elsif params[:question][-1] == "?"%>
+  <p>Silly question, get dressed and go to work!</p>
+<%else%>
+  <p>I don't care, get dressed and go to work!</p>
+<%end%>
